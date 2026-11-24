@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundNova Pro — Experimento TCC</title>
+  <meta name="description" content="Páginas experimentais SoundNova Pro: versão controlada e versão otimizada para análise de desempenho.">
+  <style>
+    :root {
+      --bg: #0b0b1a;
+      --card: #16132e;
+      --text: #f4f4fa;
+      --muted: #b8b8cc;
+      --accent: #7c3aed;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 20%, rgba(124, 58, 237, 0.28), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main { width: min(100%, 640px); }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.6rem, 4vw, 2rem);
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin: 0 0 1.75rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    a.card {
+      display: block;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    a.card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    a.card:focus-visible {
+      outline: 3px solid #a78bfa;
+      outline-offset: 3px;
+    }
+    .label {
+      display: inline-block;
+      margin-bottom: 0.45rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.2);
+      color: #ddd6fe;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .label.soon {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+    }
+    .card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .meta {
+      margin-top: 1.75rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SoundNova Pro</h1>
+    <p class="lead">
+      Experimento do TCC: comparação entre a versão controlada (baseline) e a
+      versão otimizada da página de apresentação do produto fictício.
+    </p>
+    <div class="grid">
+      <a class="card" href="controlada/">
+        <span class="label">Baseline</span>
+        <h2>Versão controlada</h2>
+        <p>Página de referência, sem as otimizações do experimento.</p>
+      </a>
+      <a class="card" href="otimizada/">
+        <span class="label soon">Em preparação</span>
+        <h2>Versão otimizada</h2>
+        <p>Mesmo conteúdo e layout, com técnicas de desempenho a aplicar.</p>
+      </a>
+    </div>
+    <p class="meta">Produto e marca fictícios — uso acadêmico.</p>
+  </main>
+</body>
+</html>
